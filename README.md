@@ -1,7 +1,7 @@
 # <img  height="50" src="https://img.icons8.com/nolan/64/musical.png" alt="musical-notes" align="absmiddle"/> **GOSPEL MUSIC DATA PIPELINE**
 
 ## Introduction
-An **ELT** pipeline designed to **extract** gospel music data (channels and  videos data) from Youtube , **loads** it to a cloud data warehouse, **transforms** it (e.g renaming columns, redifinig data types, null handling . . .) to **build insightful dashboards**.
+An **ELT** pipeline designed to **extract** gospel music data (channels and  videos data) from Youtube , **loads** it to a cloud data warehouse, **transforms** it (renaming columns, redifinig data types, null handling . . .) to **build insightful dashboards**.
 
 ##  Working Environment / Tools:
 - **<img height="18" src="https://img.icons8.com/color/48/code.png" alt="code" align="absmiddle"/> Code Editor:** <img height="18" src="https://img.icons8.com/color/50/visual-studio-code-2019.png" alt="visual-studio-code-2019" align="absmiddle"/> VS Code (Visual Studio Code Editor)
@@ -33,12 +33,12 @@ The project was broken into 3 different parts/steps with their common ground bei
 ### [**1.  DATA INGESTION LAYER:**](./Extraction_and_Load/) 
 Here a python script is written to pull data from youtube's API and loads the data to the cloud with proper pagination setup to respect youtube's limits (e.g At most 50 ids per call from videos.list) and error handling using the python logging module. [see more ...](./Extraction_and_Load/pipeline.py)
 
-[![Cloud Warehouse preview](./Assets/motherduck_warehouse_preview.jpeg)](./Assets/motherduck_warehouse_preview.jpeg)
+[![Cloud Warehouse preview](./Assets/warehouse_preview.jpeg)](./Assets/warehouse_preview.jpeg)
 ### [**2.  DATA TRANSFORMATION PROCESS:**](./Data_Transformation/data_modeling/)
 After the raw_data is set in the cloud warehouse (motherduck), dbt queries (SQL + jinja) are written to transform the raw data into a star schema( one fact and many dimensions tables) for easy querying, analysis and building  dashboards. [see more ...](./Data_Transformation/data_modeling/) 
 
 [![dbt docs serve](./Assets/dbt_docs_serve.jpeg)](./Assets/dbt_docs_serve.jpeg) 
-### [**3. Data Visualization:**](./Data_Transformation/data_modeling/)
+### [**3. Data Visualization:**](./Assets/dashboard_preview.png)
 
 Using the motherduck -> power BI connector i imported the data into Power BI and  built intuitive dashboards showcasing knowledge on the current gospel music field i judged will be interesting and useful to the viewers/users. 
 
