@@ -34,7 +34,7 @@ The project was broken into 3 different parts/steps with their common ground bei
 Here a python script is written to pull data from youtube's API and loads the data to the cloud with proper pagination setup to respect youtube's limits (e.g At most 50 ids per call from videos.list) and error handling using the python logging module. [see more ...](./Extraction_and_Load/pipeline.py)
 
 [![Cloud Warehouse preview](./Assets/motherduck_warehouse_preview.jpeg)](./Assets/motherduck_warehouse_preview.jpeg)
-### [**2.  DATA TRANSFORMATION PROCESS:**](./Data_Transformation/data_modeling/) 
+### [**2.  DATA TRANSFORMATION PROCESS:**](./Data_Transformation/data_modeling/)
 After the raw_data is set in the cloud warehouse (motherduck), dbt queries (SQL + jinja) are written to transform the raw data into a star schema( one fact and many dimensions tables) for easy querying, analysis and building  dashboards. [see more ...](./Data_Transformation/data_modeling/) 
 
 [![dbt docs serve](./Assets/dbt_docs_serve.jpeg)](./Assets/dbt_docs_serve.jpeg) 
