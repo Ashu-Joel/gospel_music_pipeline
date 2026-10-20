@@ -53,4 +53,4 @@ Yet, I believe the target niche (gospel music data) remains in much higher volum
 This is to push back on any claims you might have come to believe about this dataset being purely 'gospel music'.
  
 
-### <p style = "text-align: center">**Thank you for your time and patience.  Enjoy Your tour.😊** </p>
+### <p align="center">**Thank you for your time and patience.  Enjoy Your tour.😊** </p>

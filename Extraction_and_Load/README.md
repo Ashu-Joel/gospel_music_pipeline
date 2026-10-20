@@ -30,4 +30,4 @@ I want to assure you that my skills and knowledge are not limited to the toolset
 
 I'm also working on an orchestrator tool that could help auitomate this pipeline properly, respecting youtube's API limits and alternating between updating the database or keep running the main pipeline depending on the error code receive. coming soon...
 
-### <p style = "text-align: center">**Thank you for your time and patience.  Enjoy Your tour.😊** </p>
+### <p align = "center">**Thank you for your time and patience.  Enjoy Your tour.😊** </p>
