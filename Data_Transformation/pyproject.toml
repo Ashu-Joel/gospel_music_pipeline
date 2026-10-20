@@ -1,0 +1,20 @@
+[project]
+name = "data-transformation"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "ASHU JOEL", email = "ashujoel88@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "dbt-core>=1.12.5",
+    "dbt-duckdb[md]>=1.11.0",
+]
+
+[project.scripts]
+data-transformation = "data_transformation:main"
+
+[build-system]
+requires = ["uv_build>=0.12.14,<0.13.0"]
+build-backend = "uv_build"

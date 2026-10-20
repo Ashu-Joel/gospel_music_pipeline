@@ -1,0 +1,19 @@
+
+version: 2
+
+sources:
+  - name: raw_data
+    database: gospel_music_data
+    schema: raw_data
+    description: "This schema contains the raw data from the YouTube API, including videos and channels."
+    tables:
+      - name: raw_videos
+        description: "This table contains the raw data for videos retrieved from the YouTube API."
+      - name: raw_channels
+        description: "This table contains the raw data for channels retrieved from the YouTube API."
+      - name: raw_videos__content_details__region_restriction__allowed
+        description: "This table contains the allowed region restrictions for videos retrieved from the YouTube API."
+      - name: raw_videos__content_details__region_restriction__blocked
+        description: "This table contains the blocked region restrictions for videos retrieved from the YouTube API."
+      - name: raw_videos__snippet__tags
+        description: "This table contains the tags for videos retrieved from the YouTube API."

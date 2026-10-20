@@ -1,0 +1,61 @@
+version: 2
+
+models:
+    - name: stg_channels
+      columns:
+        - name: channel_id
+          data_tests: 
+            - unique
+            - not_null
+    - name: stg_videos
+      columns:
+        - name: video_id
+          data_tests: 
+            - unique
+            - not_null
+        - name: channel_id
+          data_tests:  
+            - not_null
+        - name: video_published_date
+          data_tests:
+            - dbt_utils.accepted_range:
+                arguments:
+                    max_value: "current_date()"
+
+
+    - name: gospel_music_channels_dim
+      columns: 
+        - name: id
+          data_tests:
+            - unique
+            - not_null
+        - name: creation_date
+          data_tests: 
+            - dbt_utils.accepted_range:
+                arguments:
+                    max_value: "current_date()"
+    - name: gospel_music_facts
+      columns:
+        - name: video_id
+          data_tests:
+            - unique
+            - not_null
+        - name: num_of_allowed_countries
+          data_tests:
+            - not_null
+            - dbt_utils.accepted_range:
+                arguments:
+                    max_value: 249
+    - name: gospel_music_videos_dim
+      columns: 
+        - name: id
+          data_tests:
+            - unique
+            - not_null
+        - name: published_date
+          data_tests: 
+            - dbt_utils.accepted_range:
+                arguments:
+                    max_value: "current_date()"
+
+
