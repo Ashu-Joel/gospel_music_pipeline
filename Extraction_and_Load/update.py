@@ -9,10 +9,10 @@ updated_at = datetime.now().strftime("%d-%m-%Y")
 
 con = duckdb.connect('md:gospel_music_data')
 
-video_ids_table = con.sql('SELECT DISTINCT id FROM raw_data.raw_videos ORDER BY RANDOM() LIMIT 5000').fetchall()
+video_ids_table = con.sql('SELECT DISTINCT id FROM raw_data.raw_videos ORDER BY RANDOM() LIMIT 10000').fetchall()
 video_ids = [id[0] for id in video_ids_table]
 
-channel_ids_table = con.sql('SELECT DISTINCT snippet__channel_id FROM raw_data.raw_videos ORDER BY RANDOM() LIMIT 5000').fetchall()
+channel_ids_table = con.sql('SELECT DISTINCT snippet__channel_id FROM raw_data.raw_videos ORDER BY RANDOM() LIMIT 10000').fetchall()
 channel_ids = [id[0] for id in channel_ids_table]
 
 def run_update():

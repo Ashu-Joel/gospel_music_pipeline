@@ -180,7 +180,7 @@ def run_pipeline ():
     
     all_search_results = []
     
-    for search_term in SEARCH_TERMS[120:130]:
+    for search_term in SEARCH_TERMS[150:160]:
         all_search_results.extend(search_videos(search_term))
     
         
