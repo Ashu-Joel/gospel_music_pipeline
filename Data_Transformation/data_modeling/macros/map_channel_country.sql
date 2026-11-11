@@ -184,6 +184,7 @@
     WHEN 'VC' THEN 'Saint Vincent and the Grenadines'
     WHEN 'LC' THEN 'Saint Lucia'
     WHEN 'KN' THEN 'Saint Kitts and Nevis'
+    WHEN 'NP' THEN 'Nepal'
     
     
     ELSE {{col}}
