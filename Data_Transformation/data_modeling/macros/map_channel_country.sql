@@ -187,27 +187,7 @@
     WHEN 'NP' THEN 'Nepal'
     WHEN 'RW' THEN 'Rwanda'
     WHEN 'BI' THEN 'Burundi'
-    WHEN 'BJ' THEN 'Benin'
-    WHEN 'TG' THEN 'Togo'
-    WHEN 'ML' THEN 'Mali'
-    WHEN 'BF' THEN 'Burkina Faso'
-    WHEN 'NE' THEN 'Niger'
-    WHEN 'TD' THEN 'Chad'
-    WHEN 'CF' THEN 'Central African Republic'
-    WHEN 'CG' THEN 'Republic of the Congo'
-    WHEN 'CD' THEN 'Democratic Republic of the Congo'
-    WHEN 'GA' THEN 'Gabon'
-    WHEN 'GQ' THEN 'Equatorial Guinea'
-    WHEN 'ST' THEN 'Sao Tome and Principe'
-    WHEN 'CV' THEN 'Cape Verde'
-    WHEN 'GM' THEN 'Gambia'
-    WHEN 'SL' THEN 'Sierra Leone'
-    WHEN 'LR' THEN 'Liberia'
-    WHEN 'GH' THEN 'Ghana'
-    WHEN 'CI' THEN "Côte d'Ivoire"
-    WHEN 'BF' THEN "Burkina Faso"
-    WHEN 'NE' THEN "Niger"
-    WHEN 'ML' THEN "Mali"
+
     
     
     ELSE {{col}}
